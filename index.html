@@ -4,39 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        display: flex;
-        height: 100vh;
-        align-items: center;
-        justify-content: center;
-      }
-
-      div {
-        background-color: teal;
-        width: 200px;
-        height: 200px;
-      }
-
-      @media screen and (min-width: 400px) {
-        div {
-          background-color: tomato;
-        }
-      }
-      @media screen and (min-width: 600px) {
-        div {
-          background-color: black;
-        }
-      }
-      @media screen and (min-width: 800px) {
-        div {
-          background-color: firebrick;
-        }
-      }
-    </style>
+    <title>Welcome to Kokoa Talk</title>
+    <link href="css/register.css" rel="stylesheet" />
   </head>
   <body>
-    <div></div>
+    <div id="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span id="status-bar__now"> 18:43 </span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fa-solid fa-battery-full"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">
+        if you have a Kokoa Account, log in with your email or phone number.
+      </p>
+    </header>
+
+    <form id="login-form">
+      <input type="text" placeholder="Email or phone number" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Sign Up" />
+      <a href="#">Find Kokoa Account or Password</a>
+    </form>
+
+    <script src="js/date.js" type="text/javascript"></script>
+    <script
+      src="https://kit.fontawesome.com/8a9bf6425d.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
