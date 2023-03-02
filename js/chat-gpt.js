@@ -1,5 +1,10 @@
 import { apiKey } from "./api-key.js";
 
+const chatGPTInfo = {
+    url: "https://api.openai.com/v1/chat/completions",
+    model: "gpt-3.5-turbo",
+}
+
 // Own variable
 const messageRowObject = {
     messageRowClass: 'message-row',
@@ -57,7 +62,7 @@ function sendToGPT(sendMsg) {
     oHttp.open("POST", chatGPTInfo.url);
     oHttp.setRequestHeader("Accept", "application/json");
     oHttp.setRequestHeader("Content-Type", "application/json");
-    oHttp.setRequestHeader("Authorization", `Bearer ${chatGPTInfo.apiKey}`);
+    oHttp.setRequestHeader("Authorization", `Bearer ${apiKey}`);
 
     oHttp.onreadystatechange = () => {
         if (oHttp.readyState === 4) {
