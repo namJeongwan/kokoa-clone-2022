@@ -1,4 +1,4 @@
-import { chatGPTInfo } from "./app-config.js";
+import { chatGPTInfo } from "./api-key.js";
 
 // Own variable
 const messageRowObject = {
