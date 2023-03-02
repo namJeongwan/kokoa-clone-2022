@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="test.css" />
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <title>alice_k106's post example</title>
+    <script>
+      $(function () {
+        $("textarea").on("keydown", function (event) {
+          if (event.keyCode == 13)
+            if (!event.shiftKey) {
+              event.preventDefault();
+              $("#testForm").submit();
+            }
+        });
+
+        $("#testForm").on("submit", function () {
+          button_click();
+        });
+
+        function button_click() {
+          alert("you pressed submit button!");
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <form id="testForm">
+      <textarea rows="20" cols="100"></textarea>
+      <button type="submit" onclick="button_click();">master piece</button>
+    </form>
+  </body>
+</html>

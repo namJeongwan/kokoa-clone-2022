@@ -1,0 +1,9 @@
+{
+    "name": "kokoa-clone",
+    "description": "kokoa-clone",
+    "authors": "jw",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "js/index.js",
+    "dependencies": {}
+}

@@ -1,0 +1,131 @@
+.recommended-friends {
+    margin: 25px 0px;
+    padding: 25px 0px;
+    border-top: var(--common-gray-border);
+    border-bottom: var(--common-gray-border);
+}
+
+.recommended-friends__title {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--common-gray-color);
+}
+
+.recommended-friends span {
+    display: block;
+    margin: 100px 0;
+    text-align: center;
+    color: var(--common-gray-color);
+}
+
+.open-chat__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.open-chat i,
+.open-chat__header span {
+    color: var(--common-gray-color);
+}
+
+.open-chat__header-title {
+    font-weight: bold;
+}
+
+.open-chat__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.open-chat__body-row {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: var(--common-gray-border);
+}
+
+.open-chat__body-row:last-child {
+    border: none;
+}
+
+.open-chat__body-content-title {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.open-chat__body-content-hashtags {
+    display: block;
+    color: var(--common-gray-color);
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.open-chat__body-content-status {
+    display: flex;
+    align-items: center;
+}
+
+.open-chat__body-content-status-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 7px;
+}
+
+.open-chat__body-content-status-participants {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--common-gray-color);
+    margin-right: 3px;
+}
+
+.open-chat__body-content-status span:nth-child(3) {
+    color: var(--common-gray-color);
+    margin-right: 3px;
+}
+
+.open-chat__body-content-status-active {
+    color: palevioletred;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.open-chat__body-main-image {
+    position: relative;
+    display: table;
+}
+
+.open-chat__body-main-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+}
+
+.open-chat__body-heart-count {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    padding-right: 7px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 85px;
+    right: 10px;
+    font-size: 14px;
+}
+
+.open-chat__body-main-image i {
+    color: white;
+}
+
+.open-chat__body-heart-count span {
+    margin-left: 3px;
+}

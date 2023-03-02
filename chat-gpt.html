@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat-gpt</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="icons/shortcut.jpg" rel="shortcut icon" />
+  </head>
+  <body id="chat-screen">
+    <div id="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span id="status-bar__now"> 18:43 </span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="tiny-screen-header">
+      <div class="tiny-screen-header__column">
+        <a href="#" onclick="window.history.back()">
+          <i class="fas fa-chevron-left fa-lg"></i>
+        </a>
+      </div>
+      <div class="tiny-screen-header__column">
+        <h1 class="tiny-screen-header__title">Simpson</h1>
+      </div>
+      <div class="tiny-screen-header__column">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+
+    <main-wrapper class="main-screen-wrapper sub-scroll">
+      <padder class="chat-head-padder"> </padder>
+      <main class="main-screen main-chat">
+        <div class="chat__timestamp today">Tuseday, June 30, 2023</div>
+
+        <div class="message-row">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt=""
+          />
+          <div class="message-row__content">
+            <span class="message__author">Simpson</span>
+            <div class="message__info">
+              <div class="message__bubble">
+                <p>Hello :)</p>
+              </div>
+              <span class="message__time">21:27</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="message-row message-row--own">
+          <div class="message-row__content">
+            <div class="message__info">
+              <div class="message__bubble">
+                <p>clear</p>
+                <p>clear2</p>
+                <p>
+                  clear2asfwsegvwesfwehbrfn23knrjfeediwbrfnklfdnediuefcnksjnfsdilfndskjvn
+                  dksnfwefcvdesfvgerdgerdgvedgverdfvdeggvfdgvdgvdg
+                </p>
+              </div>
+              <span class="message__time">21:27</span>
+            </div>
+          </div>
+        </div> -->
+      </main>
+    </main-wrapper>
+
+    <div class="chat-footer-padder"></div>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <textarea
+          type="text"
+          placeholder="Write a message... "
+          required
+          rows="1"
+          spellcheck="fal"
+        ></textarea>
+        <i class="far fa-smile-wink"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <script src="js/date.js" type="text/javascript"></script>
+    <script
+      src="https://kit.fontawesome.com/8a9bf6425d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="js/app-config.js"></script>
+    <script type="module" src="js/chat-gpt.js"></script>
+  </body>
+</html>

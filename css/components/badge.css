@@ -1,0 +1,38 @@
+.badge {
+    background-color: tomato;
+    width: 22px;
+    height: 22px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+
+.new-badge {
+    background-color: tomato;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+
+.reverse-badge {
+    border: 1px solid tomato;
+    background-color: white;
+    width: 14px;
+    height: 14px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: tomato;
+    font-size: 12px;
+    font-weight: bold;
+    
+}

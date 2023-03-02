@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import "variables.css";
+@import "reset.css";
+@import "components/screen-header.css";
+@import "components/nav-bar.css";
+@import "components/status-bar.css";
+@import "components/user-component.css";
+@import "components/empty-padder.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/icon-col.css";
+@import "components/tiny-screen-header.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "login-form.css";
+@import "chats.css";
+@import "more.css";
+@import "settings.css";
+@import "private-chat.css";
+@import "chat.css";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: auto;
+    color: #2e363e;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.welcome-header {
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.welcome-header__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.welcome-header__text {
+    width: 60%;
+    opacity: 0.6;
+    text-align: center;
+}
+
+.main-screen {
+    padding:0px var(--horizontal-space);
+}
+
+.main-screen-wrapper {
+    display: block;
+    padding-top: 90px;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 1;
+}

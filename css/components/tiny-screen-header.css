@@ -1,0 +1,41 @@
+.tiny-screen-header {
+    position: fixed;
+    top: 110;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: var(--horizontal-space);
+    margin: 20px 0px;
+    align-items: center;
+    z-index: 10;
+    background-color: inherit;
+}
+
+.tiny-screen-header__title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.tiny-screen-header__column {
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tiny-screen-header .tiny-screen-header__column:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tiny-screen-header .tiny-screen-header__column:nth-child(2) {
+    justify-content: center;
+}
+
+.tiny-screen-header .tiny-screen-header__column:last-child span { 
+    margin-left: 10px;
+}
+
+header {
+    z-index: 100;
+}

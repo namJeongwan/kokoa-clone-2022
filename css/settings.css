@@ -1,0 +1,45 @@
+.settings-icons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-icons__item {
+    display: grid;
+    grid-template-columns: 50px auto auto;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.settings-icons__sub-span {
+    justify-self: flex-end;
+    font-size: 15px;
+    color: var(--common-gray-color);
+    align-self: center;
+}
+
+.settings-icons__new-notification {
+    position: absolute;
+    left: 130px;
+}
+
+
+.settings-icons__item:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.settings-icon i {
+    font-size: 35px;
+}
+
+.settings-icons span {
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.settings-divider {
+    margin: 20px 0px;
+    color: gray;
+    background-color: gray;
+    opacity: 0.4;
+}

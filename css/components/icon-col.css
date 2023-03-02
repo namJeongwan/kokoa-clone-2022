@@ -1,0 +1,27 @@
+.icon-col {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.icon-col__icon {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.icon-col__icon i {
+    font-size: 30px;
+}
+
+.icon-col__img {
+    width: 60px;
+    height: 60px;
+}
+
+.icon-col__icon span {
+    font-size: 22px;
+    margin-left: 20px;
+}
